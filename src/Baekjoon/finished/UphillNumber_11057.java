@@ -1,17 +1,5 @@
 package Baekjoon.finished;
 
-/*
-
-arr[0] = ����arr[0~9]��
-arr[1] = ����arr[1~9]��
-.
-.
-.
-.
-arr[9] = ����arr[9]
-
----> result N = arr��
-*/
 import java.util.Scanner;
 
 public class UphillNumber_11057 {

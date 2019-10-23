@@ -16,30 +16,30 @@ public class Editor_1406 {
 		String [] command = new String[2];
 		int N=0, locate, length;
 		
-		str = br.readLine();							// ���ڿ� �Է�
+		str = br.readLine();
 		length = str.length();
+
+		N = Integer.parseInt(br.readLine());
 		
-		N = Integer.parseInt(br.readLine());							// ��ɾ� ���� �Է¹ޱ�
 		
-		
-		for(int i=0; i<length; i++) 				//  ���ڿ� �߶� ����Ʈ�� �ֱ�   ///////// �ٸ���� ????
+		for(int i=0; i<length; i++)
 			list.add(str.charAt(i));
 		
-		locate = list.size();							// Ŀ���� ���ڿ� �������� ��ġ		
+		locate = list.size();
 		
 		
 		
-		for(int i=0; i<N; i++) {						// ���
+		for(int i=0; i<N; i++) {
 			
 			command = br.readLine().split(" ");
 			
 			if(command[0].charAt(0) == 'L') {
-				if(locate == 0)						// Ŀ�� <-,  Ŀ���� �ǿ����̸� �̵����� ����
+				if(locate == 0)
 					continue;
 				locate--;
 			}
 			else if(command[0].charAt(0) == 'D') {
-				if(locate == list.size())			// Ŀ�� ->,  Ŀ���� �� �������̸� �̵����� ����
+				if(locate == list.size())
 					continue;
 				locate++;
 			}
@@ -67,35 +67,3 @@ public class Editor_1406 {
 	}
 
 }
-
-/*switch(command) 
-{
-
-	case 'L' :
-		if(locate == 0)						// Ŀ�� <-,  Ŀ���� �ǿ����̸� �̵����� ����
-			continue;
-		locate--;
-		continue;
-	case 'D' :
-		if(locate == list.size())			// Ŀ�� ->,  Ŀ���� �� �������̸� �̵����� ����
-			continue;
-		locate++;
-		continue;
-	case 'B' :								// Ŀ���չ��� ����,  Ŀ���� �� �����̸� ����
-		if(locate == 0)
-			continue;
-		locate--;
-		list.remove(locate);
-		continue;
-	case 'P' :								// Ŀ���� ���ڻ���					
-		if(locate == 0) {
-			list.add(locate, insert);
-			continue;
-		}
-		list.add(locate++, insert);
-		continue;
-	default :
-		System.out.println("�߸��� ���");
-		break;
-}
-}*/

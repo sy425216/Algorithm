@@ -16,11 +16,7 @@ public class CompressString {
 		System.out.println(solution(p));
 
 	}
-/*
-�� ����ȿ� �����������̷� �����Ѱ��� �������� ����
---> ������ �� ���̷θ� ���� ---> �߰��߰� �پ�Ѿ� ���൵ �Ұ���
-���δ� ���ص� 200������ �ȵ���
-*/
+
 	static int solution(String p) {
 		int result=p.length(); 
 		int length = p.length(), index=0, count, middle=p.length()/2, min;
@@ -34,18 +30,18 @@ public class CompressString {
 			status = false;
 			//System.out.println("----------------------------");
 			if(compare.equals("")==false) {
-				for(int j=i; j+i<=length; j+=i) {		// i�� ������ ��
+				for(int j=i; j+i<=length; j+=i) {
 					//System.out.println(p.substring(j, j+i)+"    "+compare +"   "+j+"    "+(j+i));
 					if(p.substring(j,j+i).equals(compare)) {
 						//System.out.println();
-						count+=i;					// ������̸�ŭ count���� (count�� ���߿� length���� ������)
-						if(status == false) {		// ���� �ٲ�� ó����ġ�°� ���ڶ����� -1�����ֱ�
+						count+=i;
+						if(status == false) {
 							status = true;
 							count--;
 						}
 						//System.out.println("++++++++" + count + "++++++++++");
 					}
-					else {				// �ٸ� ���ڰ� ������ ��� ���� ����ġ��� status false��
+					else {
 						compare=p.substring(j, j+i);
 						status = false;
 					}

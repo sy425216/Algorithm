@@ -40,7 +40,7 @@ public class Kth_11004 {
 	static void mergeSort(int[] bae, int[] temp) {
 		mergeSort(bae, 0, bae.length-1, temp);
 	}
-	static void mergeSort(int[] bae, int start, int end, int[] temp) {					// ����
+	static void mergeSort(int[] bae, int start, int end, int[] temp) {
 		if(start>=end)
 			return;
 		
@@ -51,7 +51,7 @@ public class Kth_11004 {
 		merge(bae, start, mid, end, temp);
 	}
 
-	static void merge(int[] bae, int start, int mid, int end, int[] temp) {				// ����, ����
+	static void merge(int[] bae, int start, int mid, int end, int[] temp) {
 		int i=start, j=mid+1, idx=start;
 		
 		while(idx <= end) {

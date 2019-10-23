@@ -1,12 +1,5 @@
 package Baekjoon.finished;
-/*
 
-�� ��ġ�� �ִ��� ����� �� ------>       �� + ������ �����ִ�(=���ǰ�+�������ִ�)(=ableMax) 
-								   ���Ұ����� ���� �ִ�  
-								   �� + �������ִ�
-
-
-*/
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

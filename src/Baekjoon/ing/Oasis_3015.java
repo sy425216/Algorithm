@@ -23,9 +23,9 @@ public class Oasis_3015 {
 			
 			num = Integer.parseInt(br.readLine());
 			
-			if(stack.isEmpty()==true)					// ������ ��������� push
+			if(stack.isEmpty()==true)
 				stack.push(num);
-			else if(stack.peek()<num) {					// ���� ���ú��� ũ��? ---> (�ǹ��� ������ ũ�� �װŻ��� �ٻ��� // ������Ŀ? �ٻ��׷�)
+			else if(stack.peek()<num) {
 				
 				while(stack.size()!=1) {
 //					if(stack.pop()==stack.peek())
@@ -41,12 +41,12 @@ public class Oasis_3015 {
 				
 				stack.push(num);
 			}
-			else if(stack.peek()>num) {					// ������ ������ ũ�ݾ�? ---> �׳� ���� count++
+			else if(stack.peek()>num) {
 				stack.push(num);
 				forSum.push(1);
 			}
 			else if(stack.peek()==num) {
-				stack.push(num);						// ���� �����Ұ� �̸� ���ش� ���� // �����ʿ�
+				stack.push(num);
 				forSum.push(forSum.peek()+1);
 			}
 		}

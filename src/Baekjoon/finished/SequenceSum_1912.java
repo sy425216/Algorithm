@@ -14,7 +14,7 @@ public class SequenceSum_1912 {
 		
 		String str;
 		int[] arr;
-		int n, max, index=0, tempMax;					// ���� max min ���� �ؽžƤФ�	
+		int n, max, index=0, tempMax;
 		
 		n = Integer.parseInt(br.readLine());
 		
@@ -25,12 +25,12 @@ public class SequenceSum_1912 {
 		
 		while(st.hasMoreTokens()) 
 			arr[index++] = Integer.parseInt(st.nextToken());
-		max = arr[0];									// ù��° ������ �ִ� ����
+		max = arr[0];
 		
 		
 		for(int i=0; i<n-1; i++) {
 			tempMax=arr[i];
-			max = (max>tempMax) ? max : tempMax;		// ��� ���Ծ����� ���� ��
+			max = (max>tempMax) ? max : tempMax;
 			
 			for(int j=i+1; j<n; j++) {
 				tempMax += arr[j];
@@ -38,7 +38,7 @@ public class SequenceSum_1912 {
 			}
 		}
 		
-		max = (max>arr[n-1]) ? max : arr[n-1];			// ������ ���� �� ū���
+		max = (max>arr[n-1]) ? max : arr[n-1];
 		
 		System.out.println(max);
 

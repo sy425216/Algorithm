@@ -31,11 +31,11 @@ public class GoodWord_3986 {
 			while(stack1.isEmpty()!=true) {
 				if(stack2.isEmpty()==true)
 					stack2.push(stack1.pop());
-				if(stack1.peek()==stack2.peek()) {		// ����1�� �ִ°��̶� ����2���ִ°��� ����?? == �Ѵپ��� 
+				if(stack1.peek()==stack2.peek()) {
 					stack1.pop();
 					stack2.pop();
 				}else {
-					stack2.push(stack1.pop());			// �ٸ��� ����1�� �ִ°��� ����2�� �ֱ�
+					stack2.push(stack1.pop());
 				}
 			}
 			

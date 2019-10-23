@@ -1,11 +1,4 @@
-/*
-�ڵ��׽�Ʈ ���� 2��
-��������/�ùٸ� ��ȣ
 
-1���� ����
-
-�׽�Ʈ���̽� �Ϸ�
-*/
 package Baekjoon.School;
 
 import java.util.Stack;
@@ -23,14 +16,14 @@ public class Gwalho {
 	static String solution(String p) {
 		String result = p;
 		int length=p.length(), countL=0, countR=0;
-		boolean status = true;	// true = �ùٸ� // false = ��������
+		boolean status = true;
 		
 		
 
-		if(p.equals("") || p==null)	// �� ���ڿ��̸� return
+		if(p.equals("") || p==null)
 			return p;
 		
-		if(isCorrect(p))			// �ùٸ� ���ڿ��̸�  return
+		if(isCorrect(p))
 			return p;
 		
 		for(int i=0; i<length; i++) {
@@ -40,16 +33,16 @@ public class Gwalho {
 				countR++;
 		}
 		
-		if(countL != countR)		// Ʋ�����ڿ��̸� xxxxx
+		if(countL != countR)
 			return "�ȸ´´ٰ�";
 		
 		
-		p = toCorrect(p);			// ��ġ��
+		p = toCorrect(p);
 		
 		return p;
 	}
 	
-	static String toCorrect(String w) {			//  ���ڿ� u v �� �����ֱ� 
+	static String toCorrect(String w) {
 		int countL=0, countR=0, length = w.length();
 		String result = "";
 		
@@ -67,23 +60,22 @@ public class Gwalho {
 		
 		return result;
 	}
-	static String toCorrect(String u, String v) {	// u, v �ùٸ����� ��ġ��
+	static String toCorrect(String u, String v) {
 		String result="";
 		int length=u.length();
 		
-		if(isCorrect(u)) {			// u�� �ǹٸ� ���ڿ��̸� v�����ϰ� ���̱�
-			if(v.equals(""))		// �ٵ� v�� ���ڿ��̸� �׳� return ����
+		if(isCorrect(u)) {
+			if(v.equals(""))
 				return u+v;
 			return u+toCorrect(v);
 		}
 		
-		
-		// u�� �ǹٸ� ���ڿ��� �ƴϸ�
+
 		result += '(';
 		result += toCorrect(v);
 		result += ')';	
 		
-		for(int i=1; i<length-1; i++) {	// ù��° ������ ���� ���� ��ȣ���� �ݴ�
+		for(int i=1; i<length-1; i++) {
 			if(u.charAt(i)=='(')
 				result+=')';
 			else
@@ -94,7 +86,7 @@ public class Gwalho {
 	}
 	
 	
-	static boolean isCorrect(String p) {		// ���� ���ڿ����� üũ
+	static boolean isCorrect(String p) {
 		Stack<Character> stack = new Stack();
 		int length = p.length();
 		

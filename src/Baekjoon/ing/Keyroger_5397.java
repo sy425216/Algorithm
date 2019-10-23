@@ -18,27 +18,27 @@ public class Keyroger_5397 {
 		caseNum = input.nextInt();
 		input.nextLine();
 		
-		for(int i=0; i<caseNum; i++) {						// �׽�Ʈ���̽� ��ŭ �ݺ�
+		for(int i=0; i<caseNum; i++) {
 			
 			locate=0; 
 			
 			password = input.nextLine();
 			pLength = password.length();
 			
-			for(int j=0; j<pLength; j++)					// ����Ʈ�� �ֱ�
+			for(int j=0; j<pLength; j++)
 				list.add(j, password.charAt(j));
 			
-			size = list.size();								// ����Ʈ ���� = �ݺ�Ƚ��
+			size = list.size();
 			
 			for(int j=0; j<size; j++) {						
 				
 				if(list.get(j) == '<') {
-					if(locate == 0)							// Ŀ�� <-,  Ŀ���� �ǿ����̸� �̵����� ����
+					if(locate == 0)
 						continue;
 					locate--;
 				}
 				else if(list.get(j) == '>') {
-					if(locate == outputList.size())			// Ŀ�� ->,  Ŀ���� �� �������̸� �̵����� ����
+					if(locate == outputList.size())
 						continue;
 					locate++;
 				}
@@ -48,7 +48,7 @@ public class Keyroger_5397 {
 					locate--;
 					outputList.remove(locate);
 				}
-				else { 										// ���ڰ� �ִ°��
+				else {
 					outputList.add(locate, list.get(j));
 					locate++;
 				}

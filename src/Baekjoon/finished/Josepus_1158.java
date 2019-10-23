@@ -3,7 +3,7 @@ package Baekjoon.finished;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-public class Josepus_1158 {						// ���� �Է°� �������� ���ص� ������ ?????? �϶ȹٷ� ���ϳ� 
+public class Josepus_1158 {
 
 	public static void main(String[] args) {
 		
@@ -13,11 +13,11 @@ public class Josepus_1158 {						// ���� �Է°� �������
 		
 		int N, K, locate=0;
 		
-												// �� �Է¹ޱ�
+
 		N = input.nextInt();
 		K = input.nextInt();
 		
-		for(int i=0; i<N; i++)					// ����Ʈ�� 1~N �߰�
+		for(int i=0; i<N; i++)
 			list.add(i+1);
 		
 		
@@ -30,7 +30,7 @@ public class Josepus_1158 {						// ���� �Է°� �������
 			System.out.print(list.get(locate) + ", ");
 			list.remove(locate);
 			
-			locate += (K-1);					// ���� ��ġ ���
+			locate += (K-1);
 			if(locate >= list.size())
 				locate %= list.size();
 		}

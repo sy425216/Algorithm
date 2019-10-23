@@ -35,21 +35,21 @@ public class IntSemo_1932 {
 		
 		maxSum[0][0] = semo[0][0];
 		
-		for(int i=1; i<n; i++) {			// ���پ� �������鼭
-			for(int j=0; j<=i; j++) {		// �� ���� ?
+		for(int i=1; i<n; i++) {
+			for(int j=0; j<=i; j++) {
 				
-				if(j==0) 					// ó���� ���
+				if(j==0)
 					maxSum[i][j] = maxSum[i-1][j] + semo[i][j];
-				else if(j==i) 				// �������ϰ��
+				else if(j==i)
 					maxSum[i][j] = maxSum[i-1][j-1] + semo[i][j];
-				else {						// �߰������ΰ��
+				else {
 					maxSum[i][j] = (maxSum[i-1][j-1] > maxSum[i-1][j]) ? maxSum[i-1][j-1]+semo[i][j] : maxSum[i-1][j]+semo[i][j];
 				}
 			}
 		}
 		
 
-		for(int i=0; i<n; i++)			// �ǹ��ٿ��� �ִ� ã��
+		for(int i=0; i<n; i++)
 			max = (max>maxSum[n-1][i]) ? max : maxSum[n-1][i];
 		
 		System.out.println(max);

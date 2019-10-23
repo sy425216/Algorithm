@@ -1,4 +1,4 @@
-//�Ϸ�
+//완료
 
 package CoadingTest.KAKAOBLIND_2019;
 
@@ -45,9 +45,9 @@ public class OpenChattingRoom_1 {
 			com = list.get(0).split(" ");
 			list.remove(0);
 			if(com[0].equals("Enter")) {
-				answer[i] = id.get(com[1]) + "���� ���Խ��ϴ�.";
+				answer[i] = id.get(com[1]) + "출력고치기.";
 			}else {
-				answer[i] = id.get(com[1]) + "���� �������ϴ�.";
+				answer[i] = id.get(com[1]) + "출력고치기";
 			}
 		}
 		

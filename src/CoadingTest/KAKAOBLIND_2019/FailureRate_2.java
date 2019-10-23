@@ -1,6 +1,4 @@
-// �Ϸ�
-
-
+// 완료
 package CoadingTest.KAKAOBLIND_2019;
 
 public class FailureRate_2 {
@@ -32,7 +30,7 @@ public class FailureRate_2 {
         	count[stages[i]]++;
         
         for(int i=1; i<N+1; i++) {
-        	if(length!=0) {						// �߿� !!!!
+        	if(length!=0) {
         		rate[i] = (double)count[i]/length;
         		length -= count[i];
         	}else {
@@ -42,7 +40,7 @@ public class FailureRate_2 {
         	
         for(int i=0; i<N; i++) {
         	max = -1;
-        	for(int j=1; j<N+1; j++) {			/// ????
+        	for(int j=1; j<N+1; j++) {
         	//System.out.println(rate[j] + "     " + max);
         		if(rate[j]>max) {
         			temp = j;

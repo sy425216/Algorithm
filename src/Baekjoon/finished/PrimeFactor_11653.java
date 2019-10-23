@@ -14,7 +14,7 @@ public class PrimeFactor_11653 {
 		
 		N = Integer.parseInt(br.readLine());
 		
-		for(int i=2; i<N; i++) {						// i<N/2 ��� �ϸ� �ȵ�,,, 
+		for(int i=2; i<N; i++) {
 			if(N%i == 0) {
 				System.out.println(i);
 				N /= i;
@@ -22,7 +22,7 @@ public class PrimeFactor_11653 {
 			}
 		}
 		if(N>1)
-			System.out.println(N);						// for ���ǹ��� i<=N �����ϸ� �Ƚᵵ �ɵ�
+			System.out.println(N);
 	}
 
 }

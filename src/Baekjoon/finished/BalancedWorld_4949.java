@@ -18,22 +18,22 @@ public class BalancedWorld_4949 {
 			chArr = str.toCharArray();
 			
 			for(int i=0; i<chArr.length; i++) {
-				if(chArr[i]=='(') {						// ������ȣ������ �ֱ�
+				if(chArr[i]=='(') {
 					stack.push(chArr[i]);
 				}
 				else if(chArr[i]=='[') {				// "
 					stack.push(chArr[i]);
 				}
-				else if( chArr[i]==']' || chArr[i]==')' ) {		// ������ȣ�ε�
-					if(stack.isEmpty()==true) {					// ������ ����մ�? ���Ѱ�
+				else if( chArr[i]==']' || chArr[i]==')' ) {
+					if(stack.isEmpty()==true) {
 						stack.push(chArr[i]);
 						break;
 					}
-					else if(chArr[i]==']' && stack.peek()=='[')		// ¦�� ������ pop
+					else if(chArr[i]==']' && stack.peek()=='[')
 						stack.pop();
-					else if(chArr[i]==')' && stack.peek()=='(')	// ¦�� ������ pop
+					else if(chArr[i]==')' && stack.peek()=='(')
 						stack.pop();
-					else {										//		¦�� �ȸ�����  ���� ������� �ʰ� �ϳ� �־��ְ� break;
+					else {
 						stack.push(chArr[i]);
 						break;
 					}
@@ -41,10 +41,10 @@ public class BalancedWorld_4949 {
 				
 			}
 			
-			if(stack.isEmpty()==true)			// ���� ��������� ����
+			if(stack.isEmpty()==true)
 				System.out.println("yes");
 			else {
-				System.out.println("no");		// ���������� �ұ��� // ���ú���
+				System.out.println("no");
 				stack.clear();
 			}
 		}

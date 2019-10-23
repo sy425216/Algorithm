@@ -25,7 +25,7 @@ public class Postfix2_1935 {
 		for(int i=0; i<N; i++) 
 			alphabet[i] = Integer.parseInt(br.readLine());
 		
-											// ���ǽ��� �ȸ��� ��� return 
+
 		
 		for(int i=0; i<length; i++) {
 			if(str.charAt(i)=='+') {
@@ -49,7 +49,7 @@ public class Postfix2_1935 {
 				stack.push(pre/after);
 			}
 			else {
-				stack.push((double) (alphabet[(int)str.charAt(i)-65]));		// A=65   // ���ÿ��� �迭�� �ִ°��� ����(������ ����Ǵ� ��)
+				stack.push((double) (alphabet[(int)str.charAt(i)-65]));
 				
 			}
 		}

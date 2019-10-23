@@ -29,13 +29,13 @@ public class DoubleArraySum_2167 {
 		
 		
 		arr = new int[N][M];
-		for(int i=0; i<N; i++) {						// NxM �迭�̴ϱ� N����ŭ ���پ� �Է¹ޱ�
+		for(int i=0; i<N; i++) {						// NxM
 			str = br.readLine();
 			st = new StringTokenizer(str, " ");
 			
 			int j=0;
 			
-			while(st.hasMoreTokens()) {					// �迭�� �� ä���
+			while(st.hasMoreTokens()) {
 				arr[i][j] = Integer.parseInt(st.nextToken());
 				j++;
 			}
@@ -46,7 +46,7 @@ public class DoubleArraySum_2167 {
 		sum = new int[count];
 		
 		
-		for(int i=0; i<count; i++) {					// ���⼭ ��Ƽ������ ? 
+		for(int i=0; i<count; i++) {
 			
 			str = br.readLine();
 			st = new StringTokenizer(str, " ");

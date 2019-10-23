@@ -1,11 +1,5 @@
 package Baekjoon.finished;
 
-/*
-
-2���� �迭�� 
-plus ���� ���� ?   ---> �� ���ʴ밢������ ������ ũ�� plus=�װ�
-
-*/
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -32,10 +26,10 @@ public class LCS_9251 {
 				
 				plus = (plus>lcs[i-1][j-1]) ? plus : lcs[i-1][j-1];
 				
-				if(s1.charAt(i-1)==s2.charAt(j-1)) {			// ���� ���ڸ� �����ֱ�
+				if(s1.charAt(i-1)==s2.charAt(j-1)) {
 					lcs[i][j] = plus+1;
 				}
-				else {						// �̰� �Ƚ��ָ� �ϳ��� �ȸ����� plus�� 0�����ʱ�ȭ �� 
+				else {
 					lcs[i][j] = (lcs[i-1][j]>lcs[i][j-1]) ? lcs[i-1][j] : lcs[i][j-1];
 				}
 

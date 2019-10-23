@@ -13,7 +13,7 @@ public class RGBDistance_1149 {
 		StringTokenizer st;
 		
 		int[][] rgb, minRoad;
-		int N, index, min=1000001, tempMin;					// �ּڰ� 1000�ƴϴ� �ؽž�
+		int N, index, min=1000001, tempMin;
 		String str;
 		
 		N = Integer.parseInt(br.readLine());
