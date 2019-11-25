@@ -50,13 +50,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Kth2_7469">
-    <configuration name="Kth2_7469" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Baekjoon.ing.Kth2_7469" />
+  <component name="RunManager" selected="Application.MagicSquare_1307">
+    <configuration name="Card2_2164" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.ing.Card2_2164" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Baekjoon.ing.*" />
+          <option name="PATTERN" value="Baekjoon.finished.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -64,12 +64,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MuziMukbangLive_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CoadingTest.KAKAOBLIND_2019.MuziMukbangLive_4" />
+    <configuration name="Kth2_7469" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.ing.Kth2_7469" />
       <module name="Algorithm" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="CoadingTest.KAKAOBLIND_2019.*" />
+          <option name="PATTERN" value="Baekjoon.finished.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MagicSquare_1307" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.finished.MagicSquare_1307" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Baekjoon.finished.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MinHeap_1927" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Baekjoon.finished.MinHeap_1927" />
+      <module name="Algorithm" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Baekjoon.finished.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -92,9 +118,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MagicSquare_1307" />
+        <item itemvalue="Application.MinHeap_1927" />
+        <item itemvalue="Application.Card2_2164" />
         <item itemvalue="Application.Kth2_7469" />
         <item itemvalue="Application.Sort_1083" />
-        <item itemvalue="Application.MuziMukbangLive_4" />
       </list>
     </recent_temporary>
   </component>
@@ -114,6 +142,14 @@
       <workItem from="1571037190162" duration="840000" />
       <workItem from="1572070862322" duration="3031000" />
       <workItem from="1572165630643" duration="17226000" />
+      <workItem from="1572236972469" duration="755000" />
+      <workItem from="1572258282954" duration="145000" />
+      <workItem from="1573280668339" duration="2718000" />
+      <workItem from="1573400051060" duration="1681000" />
+      <workItem from="1574064491356" duration="1460000" />
+      <workItem from="1574573332667" duration="3892000" />
+      <workItem from="1574602981814" duration="5922000" />
+      <workItem from="1574640017466" duration="5285000" />
     </task>
     <servers />
   </component>
